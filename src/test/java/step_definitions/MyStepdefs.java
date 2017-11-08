@@ -1,6 +1,5 @@
-package step_definitions;
+/*package step_definitions;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -15,14 +14,13 @@ public class MyStepdefs {
     WebDriver driver = null;
 
     @Given("^open browser$")
-
     public void openBrowser() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
     }
 
-    @And("^go to paga gmailcom$")
-    public void goToPageGmailCom() {
+    @And("^go to page gmailcom$")
+    public void goToPageGmailcom() {
         driver.get("https://gmail.com");
     }
 
@@ -32,7 +30,6 @@ public class MyStepdefs {
         driver.findElement(By.id("identifierNext")).click();
     }
 
-
     @Then("^enter Password$")
     public void enterPassword() {
         new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.name("password")));
@@ -40,25 +37,22 @@ public class MyStepdefs {
         driver.findElement(By.id("passwordNext")).click();
     }
 
-
-    @Then("^close browser$")
-    public void closeBrowser() throws InterruptedException{
-        Thread.sleep(10000);
-        driver.close();
-        driver.quit();
-    }
-
     @Given("^click button compose$")
     public void clickButtonCompose() {
-        driver.findElement(ByTex)
-
-
-
+        new WebDriverWait(driver, 10)
+                .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div[class = 'T-I J-J5-Ji T-I-KE L3']")));
+        driver.findElement(By.cssSelector("div[class = 'T-I J-J5-Ji T-I-KE L3']")).click();
     }
 
-    @And("^eneter the recipients$")
-    public void eneterTheRecipients() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    @When("^eneter the recipients$")
+    public void eneterTheRecipients() {
+        driver.findElement(By.name("to")).sendKeys("test2017selenium@gmail.com");
     }
+
+    @And("^eneter the subject$")
+    public void eneterTheSubject() {
+        driver.findElement(By.name("subjectbox")).sendKeys("test2017selenium@gmail.com");
+    }
+
 }
+*/
