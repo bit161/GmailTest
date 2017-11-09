@@ -3,11 +3,8 @@ Feature: test for log in operation
     Given open browser
     And go to page gmailcom
     When  enter login
-    Then enter Password
+    And enter Password
+    Then browser close
 
-  Scenario: Send letter
-    Given click button compose
-    When eneter the recipients
-    And eneter the subject
-    Then click send
+
 

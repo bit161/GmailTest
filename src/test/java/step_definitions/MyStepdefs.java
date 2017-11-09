@@ -30,14 +30,21 @@ public class MyStepdefs {
         driver.findElement(By.id("identifierNext")).click();
     }
 
-    @Then("^enter Password$")
+    @And("^enter Password$")
     public void enterPassword() {
         new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.name("password")));
         driver.findElement(By.name("password")).sendKeys("seleniumtest2017");
         driver.findElement(By.id("passwordNext")).click();
     }
 
-    @Given("^click button compose$")
+    @Then("^browser close$")
+    public void browserClose() throws InterruptedException{
+        Thread.sleep(10000);
+        driver.close();
+        driver.quit();
+    }
+
+/*    @Given("^click button compose$")
     public void clickButtonCompose() {
         new WebDriverWait(driver, 10)
                 .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div[class = 'T-I J-J5-Ji T-I-KE L3']")));
@@ -53,6 +60,5 @@ public class MyStepdefs {
     public void eneterTheSubject() {
         driver.findElement(By.name("subjectbox")).sendKeys("test2017selenium@gmail.com");
     }
-
-}
 */
+//}
