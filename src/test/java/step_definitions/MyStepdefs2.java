@@ -18,18 +18,18 @@ public class MyStepdefs2 {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://gmail.com");
-        driver.findElement(By.name("identifier")).sendKeys("test2017selenium");
-        driver.findElement(By.id("identifierNext")).click();
+        driver.findElement(By.name("identifier")).sendKeys("test2017selenium");//enter login
+        driver.findElement(By.id("identifierNext")).click();// btn next
         new WebDriverWait(driver, 10).until(ExpectedConditions.presenceOfElementLocated(By.name("password")));
-        driver.findElement(By.name("password")).sendKeys("seleniumtest2017");
-        driver.findElement(By.id("passwordNext")).click();
+        driver.findElement(By.name("password")).sendKeys("seleniumtest2017"); //enter password
+        driver.findElement(By.id("passwordNext")).click(); // btn next
     }
 
     @When("^click button compose$")
     public void clickButtonCompose() {
         new WebDriverWait(driver, 10)
                 .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div[class = 'T-I J-J5-Ji T-I-KE L3']")));
-        driver.findElement(By.cssSelector("div[class = 'T-I J-J5-Ji T-I-KE L3']")).click();
+        driver.findElement(By.cssSelector("div[class = 'T-I J-J5-Ji T-I-KE L3']")).click(); //btn compose
     }
 
     @And("^eneter the recipients$")
@@ -37,14 +37,20 @@ public class MyStepdefs2 {
         driver.findElement(By.name("to")).sendKeys("test2017selenium@gmail.com");
     }
 
-    @And("^enter the subject using the virtual keyboard$")// virtual keyboard is not used
+    @And("^enter the subject using the virtual keyboard$")
     public void enterTheSubjectUsingTheVirtualKeyboard() {
-        driver.findElement(By.name("subjectbox")).sendKeys("Hi");
+
+        driver.findElement(By.cssSelector("span[class = 'd-Na-J3 d-Na-hFsbo d-Na-JX-ax3'")).click();// select input tool
+        driver.findElement(By.cssSelector("span[class = 'd-Na-N-M7-awE'")).click(); // use english virtual keyboard
+        driver.findElement(By.name("subjectbox")).sendKeys();
+        driver.findElement(By.cssSelector("#K72")).click();//h
+        driver.findElement(By.cssSelector("#K73")).click();//i
+        driver.findElement(By.cssSelector("div[class = 'RK-QJ-Jk RK-Qq-Mq'")).click();//close virtual keyboard
     }
 
     @And("^click button send$")
     public void clickButtonSend() {
-        driver.findElement(By.id(":7h")).click();
+        driver.findElement(By.cssSelector("div[class = 'T-I J-J5-Ji aoO T-I-atl L3']")).click();
 
     }
     @Then("^browser close$")

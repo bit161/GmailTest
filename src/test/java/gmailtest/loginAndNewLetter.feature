@@ -6,3 +6,4 @@ Feature: test send letter
     And enter the subject using the virtual keyboard
     And click button send
     Then browser close
+#
