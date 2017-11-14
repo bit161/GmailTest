@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class MyStepdefs2 {
     WebDriver driver = null;
 
-    @Given("^open gmail$")
+    @Given("^open gmail$")//
     public void openGmail() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();

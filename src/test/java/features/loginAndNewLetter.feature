@@ -1,4 +1,4 @@
-@log
+@login
 Feature: test send letter
   Scenario: Send letter
     Given open gmail

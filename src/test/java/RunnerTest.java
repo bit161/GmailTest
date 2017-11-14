@@ -10,12 +10,12 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
         features = "src/test/java/features",
-        glue = "src/test/java/step_definitions",
-        tags = "@log",
+        glue = "step_definitions",
+        tags = "@login",
         dryRun = false,
         strict = false,
         snippets = SnippetType.UNDERSCORE
 
 )
 public class RunnerTest {
-}//
+}
