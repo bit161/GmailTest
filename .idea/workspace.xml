@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d7ee3e7-bed1-46c9-a0af-32d84ae472ef" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/step_definitions/MyStepdefs2.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gmailtest/GmailTest.feature" afterPath="$PROJECT_DIR$/src/test/java/gmailtest/GmailTest.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gmailtest/RunnerTest.java" afterPath="$PROJECT_DIR$/src/test/java/gmailtest/RunnerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/gmailtest/loginAndNewLetter.feature" afterPath="$PROJECT_DIR$/src/test/java/gmailtest/loginAndNewLetter.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/step_definitions/MyStepdefs.class.qwe" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/MyStepdefs.class.qwe" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/step_definitions/MyStepdefs.java" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/MyStepdefs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/step_definitions/MyStepdefs2.java" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/MyStepdefs2.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -80,8 +73,8 @@
       <file leaf-file-name="MyStepdefs2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/MyStepdefs2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="47" column="101" lean-forward="false" selection-start-line="47" selection-start-column="101" selection-end-line="47" selection-end-column="101" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -459,7 +452,7 @@
       <workItem from="1510142808119" duration="30448000" />
       <workItem from="1510230775527" duration="5034000" />
       <workItem from="1510237874046" duration="2212000" />
-      <workItem from="1510646985778" duration="3466000" />
+      <workItem from="1510646985778" duration="3684000" />
     </task>
     <task id="LOCAL-00001" summary="a123">
       <created>1510176592380</created>
@@ -475,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510235386954</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="use virtual keyboard">
+      <created>1510650539162</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1510650539162</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -511,7 +511,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41160000" />
+    <option name="totallyTimeSpent" value="41378000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -534,8 +534,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5060514" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.4924357" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32840723" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32840723" sideWeight="0.4924357" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.49394855" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -593,7 +593,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a123" />
     <MESSAGE value="the letter is sent" />
-    <option name="LAST_COMMIT_MESSAGE" value="the letter is sent" />
+    <MESSAGE value="use virtual keyboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="use virtual keyboard" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -833,8 +834,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/step_definitions/MyStepdefs2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="47" column="101" lean-forward="false" selection-start-line="47" selection-start-column="101" selection-end-line="47" selection-end-column="101" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
